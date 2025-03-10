@@ -1,1 +1,137 @@
-File Tugas-html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haffissa Homepage</title>
+</head>
+<body>
+
+    <h1>HI I’M HAFFISSA!</h1>
+
+    <p>
+        "Welcome to my online space! I have created this website to share my passions, projects, and personal thoughts.
+        I hope you find it interesting and inspiring. Don't hesitate to explore, and feel free to reach out with any
+        questions or comments."
+    </p>
+
+    <nav>
+        <a href="homepage.html">HOME</a> |
+        <a href="gallery.html">GALLERY</a> |
+        <a href="blog.html">BLOG</a> |
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<body>
+
+    <h1>Gallery</h1>
+    <p>My favorite character in the anime Boku no Hero Academia :</p>
+
+    <div>
+        <img src="images/foto1.jpg" alt="foto1" width="200">
+        <img src="images/foto2.jpg" alt="foto2" width="200">
+        <img src="images/foto3.jpg" alt="foto3" width="200">
+        <img src="images/foto4.jpg" alt="foto4" width="200">        
+    </div>
+
+    <nav>
+        <a href="homepage.html">HOME</a> |
+        <a href="gallery.html">GALLERY</a> |
+        <a href="blog.html">BLOG</a> |
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+
+    <h1>Blog</h1>
+    <p>Selamat datang di blog saya! Berikut adalah beberapa artikel menarik tentang Teknologi, Seni, dan Game.</p>
+
+    <hr>
+
+    <article>
+        <h2>Perkembangan Teknologi Kecerdasan Buatan</h2>
+        <p>
+            Teknologi kecerdasan buatan (Artificial Intelligence / AI) telah berkembang pesat dalam beberapa tahun terakhir. 
+            AI digunakan dalam berbagai bidang seperti kesehatan, industri, dan transportasi untuk meningkatkan efisiensi dan produktivitas.
+        </p>
+    </article>
+
+    <hr>
+
+    <article>
+        <h2>Peran Seni dalam Kehidupan Sehari-hari</h2>
+        <p>
+            Seni bukan hanya sekadar hiburan, tetapi juga memiliki peran penting dalam kehidupan. 
+            Melalui seni, seseorang dapat mengekspresikan perasaan, menyampaikan pesan, dan menginspirasi orang lain.
+        </p>
+    </article>
+
+    <hr>
+
+    <article>
+        <h2>Game Online: Hiburan atau Ketergantungan?</h2>
+        <p>
+            Game online telah menjadi bagian dari kehidupan modern, memberikan hiburan sekaligus tantangan bagi para pemainnya. 
+            Namun, bermain game secara berlebihan dapat menyebabkan ketergantungan dan berdampak negatif pada produktivitas.
+        </p>
+    </article>
+
+    <nav>
+        <a href="homepage.html">HOME</a> |
+        <a href="gallery.html">GALLERY</a> |
+        <a href="blog.html">BLOG</a> |
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+
+    <h1>Contact</h1>
+    <p>Hubungi saya via Instagram atau telepon.</p>
+
+    <hr>
+
+    <h2>Instagram</h2>
+    <p><a href="https://www.instagram.com/hfzraw" target="_blank">@hfzraw</a></p>
+
+    <h2>Telepon</h2>
+    <p><a href="tel:+6288242438089">+62 882-4243-8089</a></p>
+
+    <nav>
+        <a href="homepage.html">HOME</a> |
+        <a href="gallery.html">GALLERY</a> |
+        <a href="blog.html">BLOG</a> |
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+</body>
+</html>
+
+
