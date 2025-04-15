@@ -4,54 +4,327 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <style>
+        /* Variabel warna */
+        :root {
+            --orange-primary: #FF8C00;
+            --orange-secondary: #FFA500;
+            --orange-light: #FFE4B5;
+            --orange-dark: #D2691E;
+            --white: #FFFFFF;
+            --gray-light: #F5F5F5;
+            --gray-dark: #333333;
+        }
+        
+        /* Reset dan style dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--gray-light);
+            color: var(--gray-dark);
+            line-height: 1.6;
+        }
+        
+        /* Header styles */
+        .header {
+            background: linear-gradient(to right, var(--orange-dark), var(--orange-primary));
+            color: var(--white);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        /* Article styles */
+        article {
+            background-color: var(--white);
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+            border-left: 5px solid var(--orange-primary);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        article h2 {
+            color: var(--orange-dark);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        article p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        /* List styles */
+        ul {
+            list-style-type: none;
+            margin: 1rem 0;
+        }
+        
+        ul li {
+            padding: 0.5rem 0;
+            margin-left: 1.5rem;
+            position: relative;
+        }
+        
+        ul li::before {
+            content: "🔥";
+            position: absolute;
+            left: -1.5rem;
+            color: var(--orange-primary);
+        }
+        
+        ul li:hover {
+            background-color: var(--orange-light);
+            transform: translateX(10px);
+            transition: all 0.3s ease;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: var(--orange-dark);
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            background-color: var(--orange-secondary);
+        }
+        
+        /* Divider */
+        .divider {
+            border: 0;
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--orange-primary), transparent);
+            margin: 2rem 0;
+        }
+        
+        /* Button styles */
+        .btn {
+            background-color: var(--orange-primary);
+            color: var(--white);
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 1rem;
+        }
+        
+        .btn:hover {
+            background-color: var(--orange-dark);
+            transform: scale(1.05);
+        }
+        
+        /* Animation classes */
+        .fade-in {
+            animation: fadeIn 1s ease-in forwards;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Hidden elements */
+        .hidden {
+            display: none;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            article h2 {
+                font-size: 1.5rem;
+            }
+            
+            nav a {
+                padding: 0.4rem 0.8rem;
+                margin: 0 0.3rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
 <body>
-
-    <h1>Blog</h1>
-    <p>HAYYOO.</p>
-
-    <hr>
-
-    <article>
-        <h2>Artikel 1: Apa Itu Anime?</h2>
-        <p>
-            Anime adalah animasi khas Jepang yang memiliki gaya unik dan beragam genre. Dengan cerita yang mendalam dan visual menarik, anime telah menjadi hiburan populer di seluruh dunia.
-        </p>
-    </article>
-
-    <hr>
-
-    <article>
-        <h2>Tentang Anime Boku no Hero Academia</h2>
-        <p>
-            " Boku no Hero Academia" adalah anime dan manga yang menceritakan dunia di mana hampir semua orang memiliki kekuatan super yang disebut "Quirk", dari Mangaka : Kohei Horikoshi.
-        </p>
-    </article>
-
-    <hr>
-
-    <article>
-        <h2>Tentang Bakugo Katsuki</h2>
-        <p>
-            Bakugo Katsuki adalah salah satu karakter utama di anime tersebut. Saya menyukainya karena dia:
-        </p>
-        <ul>
-            <li><strong>Ganteng</strong></li>
-            <li><strong>Berambisi ingin menjadi hero No.1</strong></li>
-            <li><strong>Anak tunggal kaya raya</strong></li>
-            <li><strong>Cerdas, genius, multitalenta</strong></li>
-            <li><strong>Minusnya: Suka marah-marah</strong></li>
-        </ul>
-    </article>
-
-    <hr>
-
+    <div class="header">
+        <h1>Blog Anime</h1>
+        <p>HAYYOO.</p>
+    </div>
+    
+    <div class="container">
+        <article class="anime-article">
+            <h2>Artikel 1: Apa Itu Anime?</h2>
+            <p>
+                Anime adalah animasi khas Jepang yang memiliki gaya unik dan beragam genre. Dengan cerita yang mendalam dan visual menarik, anime telah menjadi hiburan populer di seluruh dunia.
+            </p>
+            <div class="content-extra hidden">
+                <p>Anime memiliki beragam genre seperti Shonen, Shoujo, Seinen, Josei, dan masih banyak lagi. Setiap genre memiliki karakteristik dan target audience yang berbeda.</p>
+                <img src="/api/placeholder/350/200" alt="Anime Illustration" />
+            </div>
+            <button class="btn toggle-content">Baca Selengkapnya</button>
+        </article>
+        
+        <div class="divider"></div>
+        
+        <article class="anime-article">
+            <h2>Tentang Anime Boku no Hero Academia</h2>
+            <p>
+                "Boku no Hero Academia" adalah anime dan manga yang menceritakan dunia di mana hampir semua orang memiliki kekuatan super yang disebut "Quirk", dari Mangaka: Kohei Horikoshi.
+            </p>
+            <div class="content-extra hidden">
+                <p>Cerita ini berfokus pada Midoriya Izuku, seorang anak tanpa Quirk yang bermimpi menjadi pahlawan terhebat seperti idolanya, All Might. Takdir mengubah hidupnya ketika ia bertemu dengan All Might dan mendapatkan kesempatan untuk mewarisi kekuatannya.</p>
+                <img src="/api/placeholder/350/200" alt="Boku no Hero Academia" />
+            </div>
+            <button class="btn toggle-content">Baca Selengkapnya</button>
+        </article>
+        
+        <div class="divider"></div>
+        
+        <article class="anime-article">
+            <h2>Tentang Bakugo Katsuki</h2>
+            <p>
+                Bakugo Katsuki adalah salah satu karakter utama di anime tersebut. Saya menyukainya karena dia:
+            </p>
+            <ul id="bakugo-list">
+                <li><strong>Ganteng</strong></li>
+                <li><strong>Berambisi ingin menjadi hero No.1</strong></li>
+                <li><strong>Anak tunggal kaya raya</strong></li>
+                <li><strong>Cerdas, genius, multitalenta</strong></li>
+                <li><strong>Minusnya: Suka marah-marah</strong></li>
+            </ul>
+            <div class="content-extra hidden">
+                <p>Bakugo memiliki Quirk "Explosion" yang memungkinkannya menciptakan ledakan dari keringat di telapak tangannya. Meskipun sikapnya kasar, dia memiliki tekad yang kuat dan selalu bekerja keras untuk mencapai tujuannya.</p>
+                <img src="/api/placeholder/350/200" alt="Bakugo Katsuki" />
+            </div>
+            <button class="btn toggle-content">Baca Selengkapnya</button>
+        </article>
+    </div>
+    
     <nav>
-        <a href="homepage.html">HOME</a> |
-        <a href="gallery.html">GALLERY</a> |
-        <a href="blog.html">BLOG</a> |
+        <a href="homepage.html">HOME</a> | 
+        <a href="gallery.html">GALLERY</a> | 
+        <a href="blog.html">BLOG</a> | 
         <a href="contact.html">CONTACT</a>
     </nav>
-
+    
+    <script>
+        // Animasi saat halaman dimuat
+        document.addEventListener('DOMContentLoaded', function() {
+            const articles = document.querySelectorAll('.anime-article');
+            
+            // Animasi fade-in untuk artikel
+            articles.forEach((article, index) => {
+                setTimeout(() => {
+                    article.classList.add('fade-in');
+                }, 300 * index);
+            });
+            
+            // Toggle content tambahan
+            const toggleButtons = document.querySelectorAll('.toggle-content');
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const extraContent = this.previousElementSibling;
+                    
+                    if (extraContent.classList.contains('hidden')) {
+                        extraContent.classList.remove('hidden');
+                        this.textContent = 'Sembunyikan';
+                        
+                        // Animasi smooth untuk menampilkan content
+                        extraContent.style.opacity = '0';
+                        extraContent.style.maxHeight = '0';
+                        
+                        setTimeout(() => {
+                            extraContent.style.transition = 'opacity 0.5s ease, max-height 0.5s ease';
+                            extraContent.style.opacity = '1';
+                            extraContent.style.maxHeight = '500px';
+                        }, 10);
+                    } else {
+                        extraContent.style.opacity = '0';
+                        extraContent.style.maxHeight = '0';
+                        
+                        setTimeout(() => {
+                            extraContent.classList.add('hidden');
+                            this.textContent = 'Baca Selengkapnya';
+                        }, 500);
+                    }
+                });
+            });
+            
+            // Efek hover untuk list item Bakugo
+            const bakugoItems = document.querySelectorAll('#bakugo-list li');
+            bakugoItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.color = '#FF8C00';
+                    this.style.fontWeight = 'bold';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.color = '';
+                    this.style.fontWeight = '';
+                });
+            });
+            
+            // Efek scroll
+            window.addEventListener('scroll', function() {
+                const nav = document.querySelector('nav');
+                
+                if (window.scrollY > 100) {
+                    nav.style.backgroundColor = 'rgba(210, 105, 30, 0.9)';
+                    nav.style.transition = 'background-color 0.3s ease';
+                } else {
+                    nav.style.backgroundColor = '#D2691E';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
