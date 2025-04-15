@@ -4,13 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+    <style>
+        /* CSS untuk tampilan gallery */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fffafc;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #e84393;
+            font-size: 36px;
+            margin-bottom: 10px;
+            animation: slideIn 1.2s ease;
+        }
+
+        p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 18px;
+        }
+
+        div img {
+            margin: 10px;
+            border: 4px solid #fd79a8;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        div img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        nav {
+            margin-top: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #6c5ce7;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d63031;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
 
     <h1>Gallery</h1>
-    <p>My favorite character in the anime Boku no Hero Academia 
-       his hero name is : Bakugo Katsuki / Great Explosion Murder God Dynamight <3
-
+    <p>My favorite character in the anime Boku no Hero Academia.<br>
+       His hero name is: <strong>Bakugo Katsuki</strong> / <em>Great Explosion Murder God Dynamight</em>!
     </p>
 
     <div>
@@ -26,6 +81,13 @@
         <a href="blog.html">BLOG</a> |
         <a href="contact.html">CONTACT</a>
     </nav>
+
+    <script>
+        // JavaScript: Notifikasi saat halaman gallery dibuka
+        window.onload = function() {
+            alert("Welcome to the Gallery! Enjoy Bakugo’s best moments!");
+        };
+    </script>
 
 </body>
 </html>
