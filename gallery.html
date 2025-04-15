@@ -32,6 +32,7 @@
             border: 4px solid #fd79a8;
             border-radius: 12px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
         }
 
         div img:hover {
@@ -83,10 +84,18 @@
     </nav>
 
     <script>
-        // JavaScript: Notifikasi saat halaman gallery dibuka
+        // Notifikasi saat halaman gallery dibuka
         window.onload = function() {
             alert("Welcome to the Gallery! Enjoy Bakugo’s best moments!");
         };
+
+        // Tambahan interaktif: Klik gambar muncul alert nama file
+        const images = document.querySelectorAll("div img");
+        images.forEach(img => {
+            img.addEventListener("click", function() {
+                alert("You clicked on: " + img.alt);
+            });
+        });
     </script>
 
 </body>
