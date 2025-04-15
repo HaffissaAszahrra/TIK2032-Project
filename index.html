@@ -4,14 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haffissa Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #3498db;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e74c3c;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
 
     <h1>HI I’M HAFFISSA!</h1>
 
-    <p>
-        "are you still there?"
-    </p>
+    <p id="quote">"are you still there?"</p>
 
     <nav>
         <a href="homepage.html">HOME</a> |
@@ -19,6 +54,26 @@
         <a href="blog.html">BLOG</a> |
         <a href="contact.html">CONTACT</a>
     </nav>
+
+    <script>
+        // JavaScript: Tampilkan notifikasi saat halaman dimuat
+        window.onload = function() {
+            alert("Selamat datang di halaman Haffissa!");
+        };
+
+        // Alternatif efek interaktif: Ganti kutipan setiap 5 detik
+        const quotes = [
+            "are you still there?",
+            "keep exploring!",
+            "welcome to my world!",
+            "thanks for stopping by!"
+        ];
+        let index = 0;
+        setInterval(() => {
+            index = (index + 1) % quotes.length;
+            document.getElementById('quote').textContent = `"${quotes[index]}"`;
+        }, 5000);
+    </script>
 
 </body>
 </html>
