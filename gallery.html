@@ -60,7 +60,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Bonus: efek klik */
         .clicked {
             animation: pulse 0.4s ease-in-out;
         }
@@ -93,22 +92,8 @@
         <a href="contact.html">CONTACT</a>
     </nav>
 
-    <script>
-        // Notifikasi saat halaman gallery dibuka
-        window.onload = function() {
-            alert("Welcome to the Gallery! Enjoy Bakugo’s best moments!");
-        };
-
-        // Klik gambar muncul alert dan animasi klik
-        const images = document.querySelectorAll("div img");
-        images.forEach(img => {
-            img.addEventListener("click", function() {
-                alert("You clicked on: " + img.alt);
-                img.classList.add("clicked");
-                setTimeout(() => img.classList.remove("clicked"), 400);
-            });
-        });
-    </script>
+    <!-- File JavaScript eksternal -->
+    <script src="gallery.js"></script>
 
 </body>
 </html>
