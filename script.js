@@ -12,9 +12,7 @@
 
     <header>
         <h1>Gallery</h1>
-        <p>My favorite character in the anime Boku no Hero Academia.<br>
-           His hero name is: <strong>Bakugo Katsuki</strong> / 
-           <em>Great Explosion Murder God Dynamight</em>!
+        <p>My favorite character in the anime Boku no Hero Academia.<br> His hero name is: <strong>Bakugo Katsuki</strong> /  <em>Great Explosion Murder God Dynamight</em>!
         </p>
     </header>
 
