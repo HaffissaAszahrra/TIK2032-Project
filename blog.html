@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="blog.css"> <!-- Pastikan CSS sudah tersedia -->
 </head>
 <body>
     <div class="header">
@@ -13,6 +13,7 @@
     </div>
     
     <div class="container">
+        <!-- Artikel 1 -->
         <article class="anime-article">
             <h2>Artikel 1: Apa Itu Anime?</h2>
             <p>
@@ -27,6 +28,7 @@
         
         <div class="divider"></div>
         
+        <!-- Artikel 2 -->
         <article class="anime-article">
             <h2>Tentang Anime Boku no Hero Academia</h2>
             <p>
@@ -41,14 +43,25 @@
         
         <div class="divider"></div>
         
+        <!-- Artikel 3 -->
         <article class="anime-article">
             <h2>Tentang Bakugo Katsuki</h2>
             <p>
                 Bakugo Katsuki adalah salah satu karakter utama di anime tersebut. Saya menyukainya karena dia:
+                <ul id="bakugo-list">
+                    <li><strong>Ganteng</strong></li>
+                    <li><strong>Pintar, cerdas, genius</strong></li>
+                    <li><strong>Anak tunggal kaya raya</strong></li>
+                </ul>
             </p>
-            <ul id="bakugo-list">
-                <li><strong>Ganteng</strong></li>
-                <li><strong>Ber
-                    
-<script src="blog.js"></script>
-
+            <div class="content-extra hidden">
+                <p>Bakugo memiliki Quirk "Explosion" yang memungkinkannya menciptakan ledakan dari keringat di telapak tangannya. Meskipun sikapnya kasar, dia memiliki tekad yang kuat dan selalu bekerja keras untuk mencapai tujuannya.</p>
+                <img src="/api/placeholder/350/200" alt="Bakugo Katsuki" />
+            </div>
+            <button class="btn toggle-content">Baca Selengkapnya</button>
+        </article>
+    </div>
+    
+    <script src="blog.js"></script> <!-- Pastikan JavaScript sudah tersedia -->
+</body>
+</html>
