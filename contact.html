@@ -4,105 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #fff8f0;
-            color: #333;
-            text-align: center;
-            padding: 30px;
-        }
-
-        h1 {
-            color: #ff6f00;
-            font-size: 40px;
-            margin-bottom: 10px;
-            animation: fadeInDown 1s ease;
-        }
-
-        h2 {
-            color: #e65100;
-            margin-top: 30px;
-        }
-
-        p {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        a {
-            color: #ff6f00;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s, transform 0.2s;
-        }
-
-        a:hover {
-            color: #e65100;
-            transform: scale(1.05);
-        }
-
-        hr {
-            border: 0;
-            height: 2px;
-            background: linear-gradient(to right, #ffcc80, #ff6f00, #ffcc80);
-            margin: 30px auto;
-            width: 80%;
-            animation: slideIn 1s ease;
-        }
-
-        nav {
-            margin-top: 40px;
-        }
-
-        nav a {
-            margin: 0 15px;
-            color: #ff6f00;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #d35400;
-        }
-
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes slideIn {
-            from { width: 0; }
-            to { width: 80%; }
-        }
-
-        .tooltip {
-            position: relative;
-            display: inline-block;
-            cursor: help;
-        }
-
-        .tooltip .tooltiptext {
-            visibility: hidden;
-            width: 140px;
-            background-color: #ff6f00;
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px;
-            position: absolute;
-            bottom: 125%;
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 0;
-            transition: opacity 0.3s;
-            z-index: 1;
-        }
-
-        .tooltip:hover .tooltiptext {
-            visibility: visible;
-            opacity: 1;
-        }
-    </style>
 </head>
 <body>
 
@@ -112,15 +13,13 @@
     <hr>
 
     <h2>Instagram</h2>
-    <p class="tooltip">
+    <p>
         <a href="https://www.instagram.com/hfzraw" target="_blank">@hfzraw</a>
-        <span class="tooltiptext">Klik untuk buka Instagram</span>
     </p>
 
     <h2>Telepon</h2>
-    <p class="tooltip">
+    <p>
         <a href="tel:+6288242438089">+62 882-4243-8089</a>
-        <span class="tooltiptext">Klik untuk menelepon</span>
     </p>
 
     <nav>
@@ -130,9 +29,5 @@
         <a href="contact.html">CONTACT</a>
     </nav>
 
-    <!-- File JavaScript eksternal -->
-    <script src="contact.js"></script>
-
 </body>
 </html>
-<link rel="stylesheet" href="style.css">
