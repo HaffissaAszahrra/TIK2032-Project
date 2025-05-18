@@ -55,25 +55,7 @@
         <a href="contact.html">CONTACT</a>
     </nav>
 
-    <script>
-        // JavaScript: Tampilkan notifikasi saat halaman dimuat
-        window.onload = function() {
-            alert("Selamat datang di halaman Haffissa!");
-        };
-
-        // Alternatif efek interaktif: Ganti kutipan setiap 5 detik
-        const quotes = [
-            "are you still there?",
-            "keep exploring!",
-            "welcome to my world!",
-            "thanks for stopping by!"
-        ];
-        let index = 0;
-        setInterval(() => {
-            index = (index + 1) % quotes.length;
-            document.getElementById('quote').textContent = `"${quotes[index]}"`;
-        }, 5000);
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
