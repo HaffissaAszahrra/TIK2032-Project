@@ -33,8 +33,3 @@
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
     </nav>
-
-    <!-- Hubungkan file JavaScript -->
-    <script src="js/script.js"></script>
-</body>
-</html>
