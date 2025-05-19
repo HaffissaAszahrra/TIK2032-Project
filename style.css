@@ -71,6 +71,9 @@ a {
   color: #FFA500; /* Warna oranye untuk teks navigasi */
   text-decoration: none;
   font-weight: bold;
+  border: 2px solid black; /* Tambahkan border hitam */
+  padding: 5px 10px; /* Opsional: agar border terlihat lebih rapi */
+  border-radius: 4px; /* Opsional: untuk sudut membulat */
 }
 
 a:hover {
