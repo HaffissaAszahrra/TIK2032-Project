@@ -10,6 +10,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-image: url('images/foto5.png');
+  background-size: cover;
+  background-position: center;
 }
 
 h1, p {
@@ -53,11 +56,6 @@ h1, p {
   border-radius: 8px;
   max-width: 400px;
   text-align: left;
-}
-body {
-    background-image: url('images/foto5.png');
-    background-size: cover;
-    background-position: center;
 }
 
 /* List & Link (Navigation) */
