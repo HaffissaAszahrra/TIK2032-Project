@@ -51,31 +51,33 @@ h1, p {
   text-align: left;
 }
 
-/* Contact */
-/* Contact */
 .contact {
-  color: black; /* ubah warna teks utama jadi hitam */
-  border: 3px solid #FFA500;
+  color: black; /* teks utama hitam */
+  border: 3px solid #FFA500; /* border oranye */
   padding: 15px;
   margin-top: 30px;
   border-radius: 8px;
   max-width: 400px;
-  text-align: left;
+  text-align: left; /* teks rata kiri */
+  /* posisi agar di kiri layar */
+  margin-left: 0; /* hilangkan margin kiri jika ada */
+  /* opsional agar di kiri tapi tidak menempel ke pinggir */
+  margin-right: auto;
 }
 
-/* Khusus untuk elemen penting di dalam .contact */
+/* Judul dan link warna oranye */
 .contact h1,
 .contact h2,
 .contact a {
-  color: #FFA500; /* Judul dan link diubah ke oranye */
+  color: #FFA500;
 }
 
+/* Styling link */
 .contact a {
-  border: none; /* hilangkan border jika perlu */
+  border: none;
   font-weight: normal;
   text-decoration: underline;
 }
-
 
 /* List & Link (Navigation) */
 ul {
