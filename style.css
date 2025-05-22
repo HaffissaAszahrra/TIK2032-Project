@@ -29,6 +29,13 @@ nav a:hover {
   text-decoration: underline;
 }
 
+header h1,
+main h2,
+main p,
+footer p {
+  color: black;
+}
+
 body.contact-page {
   background-image: url('https://raw.githubusercontent.com/HaffissaAszahrra/TIK2032-Project/main/images/foto5.png');
   background-size: cover;
