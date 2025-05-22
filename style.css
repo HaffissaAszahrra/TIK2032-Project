@@ -10,9 +10,13 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url('images/foto5.png');
+  background-image: url('https://raw.githubusercontent.com/HaffissaAszahrra/TIK2032-Project/main/images/foto5.png');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+
 }
 
 h1, p {
