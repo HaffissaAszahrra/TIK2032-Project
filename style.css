@@ -134,3 +134,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.bottom-nav {
+  margin-top: auto; /* Dorong ke bawah */
+  align-self: center; /* Tengahkan secara horizontal */
+}
