@@ -54,6 +54,11 @@ h1, p {
   max-width: 400px;
   text-align: left;
 }
+body {
+    background-image: url('images/foto5.png');
+    background-size: cover;
+    background-position: center;
+}
 
 /* List & Link (Navigation) */
 ul {
