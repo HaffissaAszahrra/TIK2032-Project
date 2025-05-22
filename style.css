@@ -1,5 +1,5 @@
 body {
-  background-color: #d3d3d3; /* abu-abu terang */
+  background-color: #d3d3d3; /* warna dasar abu-abu */
   font-family: Arial, sans-serif;
   color: black;
   padding: 20px;
@@ -10,14 +10,18 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  min-height: 100vh;
+  color: white; /* jika perlu, bisa dihapus atau diatur ulang */
+}
+
+/* Hanya di halaman contact, background image ditampilkan */
+body.contact-page {
   background-image: url('https://raw.githubusercontent.com/HaffissaAszahrra/TIK2032-Project/main/images/foto5.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
-  color: white;
-
 }
+
 
 h1, p {
   margin: 0 0 15px 0;
