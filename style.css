@@ -11,15 +11,7 @@ body {
   align-items: center;
   text-align: center;
   min-height: 100vh;
-  color: white; /* jika perlu, bisa dihapus atau diatur ulang */
-}
-
-/* Hanya di halaman contact, background image ditampilkan */
-body.contact-page {
-  background-image: url('https://raw.githubusercontent.com/HaffissaAszahrra/TIK2032-Project/main/images/foto5.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  color: black; /* jika perlu, bisa dihapus atau diatur ulang */
 }
 
 
@@ -67,6 +59,13 @@ h1, p {
   margin-left: 0; /* hilangkan margin kiri jika ada */
   /* opsional agar di kiri tapi tidak menempel ke pinggir */
   margin-right: auto;
+  body.contact-page {
+  background-image: url('https://raw.githubusercontent.com/HaffissaAszahrra/TIK2032-Project/main/images/foto5.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 }
 
 /* Judul dan link warna oranye */
